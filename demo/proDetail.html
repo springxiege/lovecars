@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=720px"  name="viewport" />
+	<title>商品详情</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="js/swiper/swiper-3.3.1.min.css">
+</head>
+<body>
+	<!-- 公共头部 -->
+	<header class="clearfix">
+		<div class="header">
+			<a href="###" class="gohistory">&lt;</a>
+			<h1>商品详情</h1>
+			<a href="###" class="gwc"><p>5</p></a>
+		</div>
+	</header>
+	<section class="main mgb240">
+		<div class="banner">
+			<div class="swiper-container" id="swiper-container">
+				<div class="swiper-wrapper">
+			    	<div class="swiper-slide"><img src="images/banner.jpg" width="100%"></div>
+			    	<div class="swiper-slide"><img src="images/banner.jpg" width="100%"></div>
+			    	<div class="swiper-slide"><img src="images/banner.jpg" width="100%"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="sku">
+			<div class="sku-title">酷斯特 昂科威排挡框改装内饰配件专用装饰贴饰...</div>
+			<div class="sku-price">&yen;27.44 <small>原价 : 65.00</small></div>
+			<div class="sku-item clearfix">
+				<label class="fl">规格</label>
+				<p class="clearfix">
+					<span class="cur">白色<i></i></span>
+					<span>黑色<i></i></span>
+				</p>
+			</div>
+			<div class="sku-num clearfix">
+				<label class="fl">数量</label>
+				<p class="clearfix">
+					<a href="javascript:;" class="addcount fr"></a>
+					<input type="number" name="count" value="1" id="" class="fr">
+					<a href="javascript:;" class="minuscount fr"></a>
+				</p>
+			</div>
+		</div>
+		<div class="server detail">
+			<h2><i></i>商品详情</h2>
+			<img src="images/detail.png" width="100%" />
+		</div>
+	</section>
+	<section class="bespoke detailfooter clearfix">
+		<div class="collect fl">
+			<div class="co_img clearfix"><img class="fr" src="images/icon_collect.png"></div>
+			<p>收藏</p>
+		</div>
+		<a href="javascript:;">我要预约</a>
+		<div class="addgwc fr">
+			<div class="gwc_img"><img src="images/icon_gwc.png"></div>
+			<p>加入购物车</p>
+		</div>
+	</section>
+	<footer>
+		<a href="###">
+			<img src="images/icon_car.png">
+			<p>汽车用品</p>
+		</a>
+		<a href="###">
+			<img src="images/icon_server.png">
+			<p>服务项目</p>
+		</a>
+		<a href="###">
+			<img src="images/icon_tel.png">
+			<p>联系我们</p>
+		</a>
+	</footer>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			var swiper = document.getElementById('swiper-container');
+			var mySwiper = new Swiper(swiper, {
+				autoplay: 5000,//可选选项，自动滑动
+				pagination : '.swiper-pagination',
+				loop:true
+			});
+			mySwiper.onResize();
+			mySwiper.updateContainerSize();
+			mySwiper.updateSlidesSize();
+			mySwiper.updateProgress();
+			mySwiper.updatePagination();
+			mySwiper.updateClasses();
+		}
+	</script>
+</body>
+</html>

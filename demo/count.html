@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=720px"  name="viewport" />
+	<title>结算</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="js/swiper/swiper-3.3.1.min.css">
+</head>
+<body>
+	<!-- 公共头部 -->
+	<header class="clearfix">
+		<div class="header">
+			<a href="###" class="gohistory">&lt;</a>
+			<h1>结算</h1>
+			<a href="###" class="gwc count"><!--<p>5</p>--></a>
+		</div>
+	</header>
+	<section class="main mgb240">
+		<div class="count">
+			<div class="count_info"><label>收货人：张三</label><label>电话：18333235424</label></div>
+			<div class="count_address">收货地址：浙江省-杭州市-西湖区-文三西路-荷花苑212（老龚）</div>
+		</div>
+		<div class="sku">
+			<!-- <div class="sku-title">酷斯特 昂科威排挡框改装内饰配件专用装饰贴饰...</div>
+			<div class="sku-price">&yen;27.44 <small>原价 : 65.00</small></div> -->
+			<div class="count_pro">
+				<a href="#" class="clearfix">
+					<img class="fl" src="images/proimg.png" width="150" height="130">
+					<div class="count_pro_info">
+						<p class="count_pro_title">华饰 汽车收纳盒(一对装)车载防漏收纳盒储物盒 座椅缝隙塞...</p>
+						<p class="count_pro_price">&yen;84.00元</p>
+					</div>
+				</a>
+			</div>
+			<div class="sku-item clearfix">
+				<label class="fl">规格</label>
+				<p class="clearfix">
+					<span class="cur">白色<i></i></span>
+					<span>黑色<i></i></span>
+				</p>
+			</div>
+			<div class="sku-num clearfix">
+				<label class="fl">数量</label>
+				<p class="clearfix">
+					<a href="javascript:;" class="addcount fr"></a>
+					<input type="number" name="count" value="1" id="" class="fr">
+					<a href="javascript:;" class="minuscount fr"></a>
+				</p>
+			</div>
+		</div>
+		<div class="server detail">
+			<h2><i></i>商品详情</h2>
+			<img src="images/detail.png" width="100%" />
+		</div>
+	</section>
+	<section class="bespoke countfooter clearfix">
+		<label class="fl" id="js-check"><input type="checkbox" name="countall" id="">全选</label>
+		<a href="###" class="goforcount fr">去结算</a>
+		<div class="count_all fr">
+			<p class="count_num">合计：<span>123元</span></p>
+			<p class="nofree">不含运费</p>
+		</div>
+	</section>
+	<footer>
+		<a href="###">
+			<img src="images/icon_car.png">
+			<p>汽车用品</p>
+		</a>
+		<a href="###">
+			<img src="images/icon_server.png">
+			<p>服务项目</p>
+		</a>
+		<a href="###">
+			<img src="images/icon_tel.png">
+			<p>联系我们</p>
+		</a>
+	</footer>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		$(document).on('change','input[name=countall]',function(){
+			if($(this).is(':checked')){
+				$(this).closest('label').addClass('cur');
+			}else{
+				$(this).closest('label').removeClass('cur');
+			}
+		})
+
+	</script>
+</body>
+</html>

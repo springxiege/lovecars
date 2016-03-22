@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=720px"  name="viewport" />
+	<title>个人中心</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="js/swiper/swiper-3.3.1.min.css">
+</head>
+<body>
+	<!-- 公共头部 -->
+	<header class="clearfix">
+		<div class="header">
+			<a href="###" class="gohistory">&lt;</a>
+			<h1>个人中心</h1>
+		</div>
+	</header>
+	<section class="main mgb240 mgt100">
+		<div class="center clearfix">
+			<div class="carlogo fl"><img src="images/logocar.jpg" width="150" height="140"></div>
+			<div class="carinfo clearfix">
+				<div class="caritem fl">
+					<h3>车牌号</h3>
+					<p>浙A910AT</p>
+				</div>
+				<a href="###" class="fr">车主登录</a>
+			</div>
+		</div>
+		<div class="centerlist">
+			<ul class="clearfix">
+				<li><a href="###">养护预约</a></li>
+				<li><a href="###">我的订单</a></li>
+				<li><a href="###">投诉建议</a></li>
+				<li><a href="###">联系我们</a></li>
+			</ul>
+			<i></i>
+		</div>
+	</section>
+	<footer>
+		<a href="###">
+			<img src="images/icon_car.png">
+			<p>汽车用品</p>
+		</a>
+		<a href="###">
+			<img src="images/icon_server.png">
+			<p>服务项目</p>
+		</a>
+		<a href="###">
+			<img src="images/icon_tel.png">
+			<p>联系我们</p>
+		</a>
+	</footer>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		$(document).on('change','input[name=countall]',function(){
+			if($(this).is(':checked')){
+				$(this).closest('label').addClass('cur');
+			}else{
+				$(this).closest('label').removeClass('cur');
+			}
+		})
+
+	</script>
+</body>
+</html>

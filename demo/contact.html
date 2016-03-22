@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=720px"  name="viewport" />
+	<title>联系我们</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="js/swiper/swiper-3.3.1.min.css">
+</head>
+<body>
+	<!-- 公共头部 -->
+	<header class="clearfix">
+		<div class="header">
+			<a href="###" class="gohistory">&lt;</a>
+			<h1>联系我们</h1>
+		</div>
+	</header>
+	<section class="main">
+		<div class="server detail">
+			<h2><i></i>车立方洗车店-门店</h2>
+			<img src="images/contact.png" width="100%" class="mgb0" />
+		</div>
+		<div class="contactitem">
+			<div class="c_address clearfix">
+				<div class="addr fl">地址：杭州文三路123号</div>
+				<a href="###" class="fr">地图</a>
+			</div>
+			<div class="c_tel clearfix">
+				<div class="tel fl">13312341234</div>
+				<a href="tel:13312341234" class="fr">拨打</a>
+			</div>
+		</div>
+		<div class="server detail">
+			<h2><i></i>门店介绍</h2>
+			<div class="contact">
+				&emsp;&emsp;车立方洗车店，是一家专业的汽修公司。车立方洗车店，是一家专业的汽修公司。车立方洗车店，是一家专业的汽修公司。车立方洗车店，是一家专业的汽修公司。
+			</div>
+		</div>
+	</section>
+	<footer>
+		<a href="###">
+			<img src="images/icon_car.png">
+			<p>汽车用品</p>
+		</a>
+		<a href="###">
+			<img src="images/icon_server.png">
+			<p>服务项目</p>
+		</a>
+		<a href="###">
+			<img src="images/icon_tel.png">
+			<p>联系我们</p>
+		</a>
+	</footer>
+
+	<!-- 弹窗 -->
+	<div class="pop"></div>
+	<div class="project">
+		<h2>预约项目</h2>
+		<div class="projectlist">
+			<ul>
+				<li>换机油</li>
+				<li>补胎</li>
+				<li>四轮定位</li>
+				<li>动平衡</li>
+				<li>音响</li>
+				<li>空调清洗</li>
+				<li>换机油</li>
+				<li>补胎</li>
+				<li>四轮定位</li>
+				<li>动平衡</li>
+				<li>音响</li>
+				<li>空调清洗</li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(document).on('click','input[name=project]',function(){
+				$('.pop,.project').show();
+			});
+			$(document).on('click','.projectlist li',function(){
+				var _val = $(this).text();
+				$('input[name=project]').val(_val);
+				$('.pop,.project').hide();
+			})
+		})
+	</script>
+</body>
+</html>

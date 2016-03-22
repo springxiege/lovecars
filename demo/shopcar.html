@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=720px"  name="viewport" />
+	<title>购物车</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="js/swiper/swiper-3.3.1.min.css">
+</head>
+<body>
+	<!-- 公共头部 -->
+	<header class="clearfix">
+		<div class="header">
+			<a href="###" class="gohistory">&lt;</a>
+			<h1>购物车</h1>
+		</div>
+	</header>
+	<section class="main mgb280">
+		<div class="shops clearfix">
+			共<span>2</span>件
+			<p class="js-edit fr">编辑</p>
+		</div>
+		<div class="shoplist clearfix">
+			<a href="#">
+				<img src="images/shopimg.png" width="240" height="240" alt="" class="fl">
+			</a>
+			<div class="shopinfo">
+				<a href="#"><p class="shoptitle">华饰 汽车收纳盒(一对装)车载防漏收纳盒储物盒 座椅缝隙塞防漏垫 改装专用配件 时尚黑 座椅夹缝收纳盒 翼虎汉兰达新奇骏途观C</p></a>
+				<p class="shopsku">规格：白色</p>
+				<p class="shopprice">&yen;27.44 <span>79元</span><b class="addnum fr">+</b><span class="fr"><i>&times;</i>1</span><b class="minum fr">-</b></p>
+			</div>
+		</div>
+		<div class="shoplist editnow clearfix">
+			<a href="#">
+				<img src="images/shopimg.png" width="240" height="240" alt="" class="fl">
+			</a>
+			<div class="shopinfo">
+				<a href="#"><p class="shoptitle">华饰 汽车收纳盒(一对装)车载防漏收纳盒储物盒 座椅缝隙塞防漏垫 改装专用配件 时尚黑 座椅夹缝收纳盒 翼虎汉兰达新奇骏途观C</p></a>
+				<p class="shopsku">规格：白色</p>
+				<p class="shopprice">&yen;27.44 <span>79元</span><b class="addnum fr">+</b><span class="fr"><i>&times;</i>1</span><b class="minum fr">-</b></p>
+			</div>
+		</div>
+	</section>
+	<section class="bespoke countfooter clearfix">
+		<label class="fl" id="js-check"><input type="checkbox" name="countall" id="">全选</label>
+		<a href="###" class="goforcount fr">去结算</a>
+		<div class="count_all fr">
+			<p class="count_num">合计：<span>123元</span></p>
+			<p class="nofree">不含运费</p>
+		</div>
+	</section>
+	<footer>
+		<a href="###">
+			<img src="images/icon_car.png">
+			<p>汽车用品</p>
+		</a>
+		<a href="###">
+			<img src="images/icon_server.png">
+			<p>服务项目</p>
+		</a>
+		<a href="###">
+			<img src="images/icon_tel.png">
+			<p>联系我们</p>
+		</a>
+	</footer>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		$(document).on('change','input[name=countall]',function(){
+			if($(this).is(':checked')){
+				$(this).closest('label').addClass('cur');
+
+			}else{
+				$(this).closest('label').removeClass('cur');
+			}
+		})
+		$(document).on('click','.editnow',function(){
+			if($(this).hasClass('cur')){
+				$(this).removeClass('cur');
+			}else{
+				$(this).addClass('cur');
+			}
+		})
+		$(document).on('click','.shops',function(){
+			if($(this).hasClass('edit')){
+				$(this).removeClass('edit');
+				$('.shoplist').removeClass('editnow');
+			}else{
+				$(this).addClass('edit');
+				$('.shoplist').addClass('editnow');
+			}
+		})
+
+	</script>
+</body>
+</html>

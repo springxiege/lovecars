@@ -4,7 +4,8 @@ the pages for webapp
 
 这里，我要着重说一下main.js文件，因为该文件主要功能是对移动端终端设备进行适配
 
-demo --> main.js
+demo/js/main.js
+
 
 主要代码如下：
 

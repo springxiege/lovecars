@@ -8,7 +8,7 @@ demo/js/main.js
 
 
 主要代码如下：
-
+``` js
 $(function(){
 	
 	var app = window.navigator.userAgent.toLowerCase(),
@@ -82,3 +82,4 @@ $(function(){
 
 
 })
+```
